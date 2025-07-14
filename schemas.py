@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 class LibroCreate(BaseModel):
     titulo: str
@@ -7,6 +7,11 @@ class LibroCreate(BaseModel):
 
 class Libro(LibroCreate):
     id: int
+    
+    model_config = ConfigDict(from_attributes=True)
 
-    class Config:
-        orm_mode = True
+
+
+
+   # class Config:
+   #     orm_mode = True

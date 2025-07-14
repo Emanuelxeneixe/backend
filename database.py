@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 # String o cadena de conexión a la base de datos
 
-DB_URL = "postgresql://postgres:postgres@localhost:5432/libreria"
+DB_URL = "postgresql://postgres:123456@localhost:5432/libreria"
 # DB_URL = "sqlite:///./libreria.db"  # Cambia esto según tu base de datos
 
 # Crear un motor de base de datos
